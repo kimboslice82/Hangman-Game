@@ -1,0 +1,37 @@
+html {
+    background: url(../images/dark_embroidery.png);
+    /*background-image: url(../images/background.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;*/
+    
+}
+
+#main-img {
+    
+}
+
+@font-face {
+    font-family: "gameofthrones";
+    src: url("../images/gameofthrones.ttf");
+}
+
+audio {
+    display: none;
+}
+
+h1, h2, h3, p, #letters-used {
+    font-family: "gameofthrones";
+    color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+h2, h3, p {
+    text-align: center;
+}
+
