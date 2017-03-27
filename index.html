@@ -5,79 +5,34 @@
   <meta charset="utf-8">
 
   <title>Hangman</title>
-    <h1>Hangman - Game of Thrones</h1>
-    
-    <h2>Press Any Key to Get Started</h2>
-    
+    <h1>Hangman - Game of Thrones</h1>    
+    <h2>Press Any Key to Get Started</h2><br>   
     
     
-    <div id="game">
-        
-    </div>
+    <div id="game"></div>
     
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
 </head>
 
-<body>
+    <body>
     
     <!--img src="assets/images/iron-throne.jpg" id=main-img-->
     
    
     
-    <div id="letters-used">
-       
-    </div>
-    
- <audio autoplay="true" src="assets/images/Game-of-Thrones-Extended-Theme.mp3" type="audio/mpeg">
+            <div id="current-word">Current Word:</div><br>
+            <div id="placeholders"></div><br>
+            <div id="guessesleft">Number of Guesses Remaining:</div><br>
+            <div id="letters-used">Letters Already Guessed:</div><br>
+
 
     
-<script type="text/javascript">
-    
-    var words = ["khaleesi", "jon snow", "sansa", "the mountain", "tyrion", "drogo"];
-    var wins = 0;
-    var guessesLeft = 10;
-    var lettersUsed = [];
-    var answerString = [];
-    var lettersChosen = [];
-    
-        
-        
-    
-    
-document.onkeyup = function(event) {
-    
-    /*var el = document.getElementById("game");
-    el.innerHTML = pickWord;*/
-     
-    // This picks a random word to begin game
-   var pickWord = words[Math.floor(Math.random() * words.length)];
-    
-   
-    // Display empty placeholders for answer
-    
-    for (i = 0; i < pickWord.length; i++) {
-        answerString[i] = "_ ";
-    }
-   
-   // Creating loop for game
-    
-    
-    var lettersRemaining = pickWord.length;
-    
-    while (lettersRemaining > 0) {
-        //need to show player their guesses
-        var el = document.getElementById("game");
-            el.innerHTML = answerString.join(" ");
-    }
-    
-    
+            <audio autoplay="true" src="assets/images/Game-of-Thrones-Extended-Theme.mp3" type="audio/mpeg">
     
 
-};
-
-</script>
+        <script src="assets/javascript/game.js"></script>
 
 </body>
 </html>

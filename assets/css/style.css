@@ -10,7 +10,6 @@ html {
     position: fixed;
     margin-left: 300px;
     margin-bottom: 100px;
- 
     
     
 }
@@ -24,7 +23,7 @@ audio {
     display: none;
 }
 
-h1, h2, h3, p, #letters-used {
+h1, h2, h3, p, #letters-used, #current-word, #placeholders, #guessesleft {
     font-family: "gameofthrones";
     color: aliceblue;
 
