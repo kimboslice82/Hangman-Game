@@ -5,9 +5,14 @@
   <meta charset="utf-8">
 
   <title>Hangman</title>
+    <h1>Hangman - Game of Thrones</h1>
+    
+    <h2>Press Any Key to Get Started</h2>
+    
+    
     
     <div id="game">
-        <h1>Hangman - Game of Thrones</h1>
+        
     </div>
     
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -17,16 +22,12 @@
 
 <body>
     
-    <!--img src="assets/images/background.jpg"-->
+    <!--img src="assets/images/iron-throne.jpg" id=main-img-->
     
-    <h2>Press Any Key to Get Started!</h2>
-    
-    <p class = "wins"> Wins</p>
-    
-    <p>Current Word</p>
+   
     
     <div id="letters-used">
-        <h3>Letters Already Guessed</h3>
+       
     </div>
     
  <audio autoplay="true" src="assets/images/Game-of-Thrones-Extended-Theme.mp3" type="audio/mpeg">
@@ -34,39 +35,47 @@
     
 <script type="text/javascript">
     
-    var words = ["khaleesi", "jonsnow", "sansa", "themountain", "tyrion", "drogo"];
+    var words = ["khaleesi", "jon snow", "sansa", "the mountain", "tyrion", "drogo"];
     var wins = 0;
     var guessesLeft = 10;
     var lettersUsed = [];
+    var answerString = [];
+    var lettersChosen = [];
+    
+        
+        
+    
     
 document.onkeyup = function(event) {
+    
+    /*var el = document.getElementById("game");
+    el.innerHTML = pickWord;*/
      
-        
-        
-        
-        
-        
-        
-        
-        
-        
+    // This picks a random word to begin game
+   var pickWord = words[Math.floor(Math.random() * words.length)];
+    
+   
+    // Display empty placeholders for answer
+    
+    for (i = 0; i < pickWord.length; i++) {
+        answerString[i] = "_ ";
+    }
+   
+   // Creating loop for game
+    
+    
+    var lettersRemaining = pickWord.length;
+    
+    while (lettersRemaining > 0) {
+        //need to show player their guesses
+        var el = document.getElementById("game");
+            el.innerHTML = answerString.join(" ");
+    }
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}
- 	
 
-
+};
 
 </script>
 
