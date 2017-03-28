@@ -9,7 +9,7 @@
     <h2>Press Any Key to Get Started</h2><br>   
     
     
-    <div id="game">
+    <div id="game"></div>
     
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -18,14 +18,20 @@
 
     <body>
     
-    <!--img src="assets/images/iron-throne.jpg" id=main-img-->
+    <img src="assets/images/iron-throne.jpg" id=main-img>
     
    
     
-            <div id="current-word">Current Word:</div><br>
+            <div id="current-word">Current Word:</div>
+               
+                <br>
             <div id="placeholders"></div><br>
-            <div id="guessesleft">Number of Guesses Remaining:</div><br>
-            <div id="letters-used">Letters Already Guessed:</div><br>
+            <div><p>Number of Guesses Remaining:</p>
+            <div id="guesses-left">0</div>
+            <div><p>Letters Already Guessed:<p></div>
+            <div id="letters-guessed"></div><br>
+            <h3>Wins:</h3>
+            <div id="wins">0</div>
 
 
     
@@ -33,7 +39,7 @@
     
 
         <script src="assets/javascript/game.js"></script>
-        </div>
+        
 
 </body>
 </html>

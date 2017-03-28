@@ -2,14 +2,16 @@ html {
     background: url(../images/dark_embroidery.png);
     /*background-image: url(../images/iron-throne.jpg);
     background-repeat:no-repeat;*/
-    
+    font-family: "gameofthrones";
+    color: aliceblue;
     
 }
 
-#main-img {
-    position: fixed;
-    margin-left: 300px;
-    margin-bottom: 100px;
+#main-img {    
+    z-index: -2;
+    position: absolute;
+    margin-left: 400px;
+   
     
     
 }
@@ -23,11 +25,7 @@ audio {
     display: none;
 }
 
-h1, h2, h3, p, #letters-used, #current-word, #placeholders, #guessesleft {
-    font-family: "gameofthrones";
-    color: aliceblue;
 
-}
 
 h1 {
     text-align: center;
@@ -35,7 +33,7 @@ h1 {
 
 }
 
-h2, h3, p {
-    text-align: center;
+h2 {
+   text-align: center;
 }
 
